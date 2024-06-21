@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:shapeAppearanceOverlay="@style/RoundedCorners"
+    android:background="@color/Osnova">
+
+    <ImageButton
+        android:id="@+id/Dobavit"
+        android:layout_width="159dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/fon5"
+        android:src="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout1"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout11"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/my_button"
+            android:layout_width="159dp"
+            android:layout_height="95dp"
+            android:background="@drawable/img_5"
+            android:src="@drawable/rounded_corners"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/menuTextVew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:paddingLeft="12dp"
+            android:paddingBottom="12dp"
+            android:text="19:11"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView2">
+
+        <ImageButton
+            android:id="@+id/my_buttonh"
+            android:layout_width="159dp"
+            android:layout_height="95dp"
+            android:background="@drawable/img_4"
+            android:src="@drawable/rounded_corners"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/menuTextVewf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:paddingLeft="12dp"
+            android:paddingBottom="12dp"
+            android:text="11:00"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout11"
+        app:layout_constraintTop_toBottomOf="@+id/TextView2"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/my_butto12"
+            android:layout_width="159dp"
+            android:layout_height="95dp"
+            android:background="@drawable/img_6"
+            android:src="@drawable/rounded_corners"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/menuTextVewf12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:paddingLeft="12dp"
+            android:paddingBottom="12dp"
+            android:text="15:55"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="236dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout112"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/my_butto"
+            android:layout_width="159dp"
+            android:layout_height="95dp"
+            android:background="@drawable/img_7"
+            android:src="@drawable/rounded_corners"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/menuTe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:paddingLeft="12dp"
+            android:paddingBottom="12dp"
+            android:text="11:11"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/exitbutton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="#253334"
+        android:text="exit"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/MainimageView"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="73dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/more" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/music"
+        android:layout_width="20dp"
+        android:layout_height="21.54dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/music" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="15.76dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/coalaUser"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainimageView"
+        app:srcCompat="@drawable/coala" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="15dp"
+        android:text="Эмиль"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="33sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coalaUser" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

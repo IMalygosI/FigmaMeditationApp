@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Osnova">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="73dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/fonImageView"
+        android:layout_width="415dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fon" />
+
+    <TextView
+        android:id="@+id/Register_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="5dp"
+        android:text="Sing in"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/RegisterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/ProfilInButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SingInButton"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="321dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#BEC2C2"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#BEC2C2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPasss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPasss"
+        android:layout_width="321dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#BEC2C2"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#BEC2C2"
+        app:layout_constraintBottom_toTopOf="@+id/SingInButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SingInButton"
+        android:layout_width="321dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="60dp"
+        android:alpha="0.9"
+        android:backgroundTint="#7C9A92"
+        android:textColor="#FFFF"
+        android:text="Sing in"
+        android:textSize="25sp"
+        app:cornerRadius="25px"
+        app:layout_constraintBottom_toTopOf="@+id/ProfilInButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ProfilInButton"
+        android:layout_width="321dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="139dp"
+        android:alpha="0.9"
+        android:backgroundTint="#7C9A92"
+        android:textColor="#FFFF"
+        android:text="Профиль"
+        android:textSize="25sp"
+        app:cornerRadius="25px"
+        app:layout_constraintBottom_toBottomOf="@+id/fonImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

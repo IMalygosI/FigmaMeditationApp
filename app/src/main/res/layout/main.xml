@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Osnova"
+    app:constraint_referenced_tags="20px">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/coala"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coala" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/more" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/Text"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="С вовзращением, Эмиль!"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:text="Каким ты себя ощущаешь сегодная?"
+            android:textColor="#FFFFFFFF"
+            android:textSize="19dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/calm_Button"
+        android:layout_width="55dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/Osnova"
+        android:foreground="@drawable/calm"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout9"
+        app:layout_constraintEnd_toStartOf="@+id/sButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:id="@+id/sButton2"
+        android:layout_width="66dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/Osnova"
+        android:foreground="@drawable/relaxed"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout9"
+        app:layout_constraintEnd_toStartOf="@+id/sButton3"
+        app:layout_constraintStart_toEndOf="@+id/calm_Button"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/sButton3"
+        android:layout_width="66dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/Osnova"
+        android:foreground="@drawable/concentrated"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout9"
+        app:layout_constraintEnd_toStartOf="@+id/sButton4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/sButton4"
+        android:layout_width="66dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/Osnova"
+        android:foreground="@drawable/excited"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout9"
+        app:layout_constraintEnd_toStartOf="@+id/sButton5"
+        app:layout_constraintStart_toEndOf="@+id/sButton3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:id="@+id/sButton5"
+        android:layout_width="5dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/Osnova"
+        android:foreground="@drawable/img_3"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout9"
+        android:layout_width="340dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="310dp"
+        android:background="#253334"
+        app:cornerRadius="20px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/fon_in_main"
+            android:layout_width="340dp"
+            android:layout_height="165dp"
+            app:srcCompat="@drawable/fon_in_main" />
+
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/img_1" />
+
+
+        <TextView
+            android:id="@+id/menu1TextView"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menuTextView11"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="5dp"
+            android:text="Заголовок блока"
+            android:textColor="#384647"
+            android:textFontWeight="@integer/material_motion_duration_medium_1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menuTextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_above="@+id/menuTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="0dp"
+            android:text="Краткое опиcание"
+            android:textColor="#384647"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/menuTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Button"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="14dp"
+            android:text="блока с двумя строчками"
+            android:textColor="#384647"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Button"
+            android:layout_width="126dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#253334"
+            android:text="Подробнее"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:cornerRadius="20px" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout10"
+        android:layout_width="340dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="100dp"
+        android:background="#253334"
+        app:cornerRadius="20px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout9"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/fon_in_main2"
+            android:layout_width="340dp"
+            android:layout_height="165dp"
+            app:srcCompat="@drawable/fon_in_main" />
+
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/img_2" />
+
+        <TextView
+            android:id="@+id/menuTextVi3ew1"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menuTextView1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="5dp"
+            android:text="Заголовок блока"
+            android:textColor="#384647"
+            android:textFontWeight="@integer/material_motion_duration_medium_1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menuTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_above="@+id/menuTextView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="0dp"
+            android:text="Краткое опиcание блока"
+            android:textColor="#384647"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/menuTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ButtonText1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="14dp"
+            android:text="с двумя строчками"
+            android:textColor="#384647"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/ButtonText1"
+            android:layout_width="126dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#253334"
+            android:text="Подробнее"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:cornerRadius="20px" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/music"
+        android:layout_width="20dp"
+        android:layout_height="21.54dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/music" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="15.76dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
